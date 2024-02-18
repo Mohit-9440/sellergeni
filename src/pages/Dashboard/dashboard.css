@@ -4,14 +4,15 @@ body{
 }
 .dashboard{
     padding: 40px;
-    background: #EEEEEE;
+    background: #ECECEC;
 }
 .dashboard-main{
     display: flex;
     flex-direction: column;
     font-family: Inter;
+    gap: 20px;
 }
-.dashboard-head{
+.dashboard-head, .dashboard-middle, .dashboard-bottom{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -25,9 +26,14 @@ body{
 .dashboard-head-bottom-wrapper{
     display: flex;
     flex-direction: row;
-    border: 1px solid grey;
-    border-radius: 4px;
+    border: 1px solid #c7c7c7;
+    border-radius: 6px;
     padding: 10px;
     background: #fff;
     gap: 30px;
+}
+.dashboard-middle-first-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }

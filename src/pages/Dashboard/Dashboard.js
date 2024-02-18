@@ -5,6 +5,7 @@ import DashBoardOrderSales from "../../components/DashboardOrderSales/DashBoardO
 import BudgetGrowth from "../../components/BudgetGrowth/BudgetGrowth";
 import BrandStore from "../../components/BrandStore/BrandStore";
 import OrderSummary from "../../components/OrderSummary/OrderSummary";
+import Support from "../../components/Support/Support";
 export default function Dashboard() {
   return (
     <div className="dashboard">
@@ -28,7 +29,9 @@ export default function Dashboard() {
             <OrderSummary />
           </div>
         </section>
-        <section></section>
+        <section className="dashboard-bottom">
+            <Support/>
+        </section>
       </div>
     </div>
   );
