@@ -1,6 +1,10 @@
 import React from "react";
 import { Typography, Tabs, Tab } from "@material-ui/core";
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
+
 import "./dashboardordersales.css";
+import { styled } from "@mui/material/styles";
+
 import LineChart from "../LineChart";
 import {
   GoArrowDown,
@@ -9,28 +13,62 @@ import {
   GoArrowUpRight,
 } from "react-icons/go";
 
+const LightTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} classes={{ popper: className }} placement="top" />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: theme.palette.common.white,
+    color: "rgba(0, 0, 0, 0.87)",
+    boxShadow: theme.shadows[1],
+    fontSize: 11,
+  },
+}));
 export default function DashBoardOrderSales() {
-  const value = 1;
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   return (
     <>
       <div className="dashboard-head-bottom-left">
         <div className="dashboard-head-bottom-left-top">
-          <Tabs value={value}>
-            <Tab label="Orders">
-              <Typography style={{ textTransform: "capitalize" }}>
-                Orders
-              </Typography>
-            </Tab>
-            <Tab label="Sales">
-              <Typography style={{ textTransform: "capitalize" }}>
-                Sales
-              </Typography>
-            </Tab>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            indicatorColor="primary"
+            textColor="primary"
+          >
+            <Tab
+              label={
+                <Typography
+                  style={{
+                    textTransform: "capitalize",
+                    fontSize: "14px",
+                    color: value === 0 ? "primary" : "inherit",
+                  }}
+                >
+                  Orders
+                </Typography>
+              }
+            />
+            <Tab
+              label={
+                <Typography
+                  style={{
+                    textTransform: "capitalize",
+                    color: value === 1 ? "primary" : "inherit",
+                  }}
+                >
+                  Sales
+                </Typography>
+              }
+            />
           </Tabs>
         </div>
         <div className="dashboard-head-bottom-left-bottom">
           <div className="dashboard-head-graph-hero">
-            <div>Total Sales</div>
+            <div className="dashboard-head-graph-hero-heading">Total Sales</div>
             <div style={{ color: "#000", fontSize: "14px" }}>
               <span style={{ fontSize: "22px", fontWeight: "600" }}>
                 ₹42,450
@@ -44,7 +82,9 @@ export default function DashBoardOrderSales() {
               <span style={{ fontWeight: "500" }}>₹1,14,000</span>
             </div>
           </div>
-          {/* <div className="dashboard-head-graph"><LineChart/></div> */}
+          <div className="dashboard-head-graph">
+            <LineChart />
+          </div>
         </div>
       </div>
       <div className="dashboard-head-bottom-right">
@@ -125,7 +165,26 @@ export default function DashBoardOrderSales() {
           <div className="dashboard-head-bottom-right-bottom-heading">
             Account Health Rating
           </div>
-          <div className="dashboard-head-bottom-right-bottom-progress"></div>
+          <div className="dashboard-head-bottom-right-bottom-progress">
+            <LightTooltip title="Danger" arrow>
+              <div
+                className="progress-bar"
+                style={{ height: "10px", width: "33%", background: "red" }}
+              ></div>
+            </LightTooltip>
+            <LightTooltip title="Moderate" arrow>
+              <div
+                className="progress-bar"
+                style={{ height: "10px", width: "33%", background: "yellow" }}
+              ></div>
+            </LightTooltip>
+            <LightTooltip title="Healthy" arrow>
+              <div
+                className="progress-bar"
+                style={{ height: "10px", width: "33%", background: "green" }}
+              ></div>
+            </LightTooltip>
+          </div>
           <div className="dashboard-head-bottom-right-bottom-view-report">
             <GoArrowRight />
             View Report

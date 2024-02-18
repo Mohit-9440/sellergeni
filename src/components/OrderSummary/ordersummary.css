@@ -33,6 +33,10 @@
   cursor: pointer;
   align-items: center;
   gap: 10px;
+  font-size: 12px;
+}
+.order-summary-table-search{
+    color: #a5a5a5;
 }
 .order-summary-table-top {
   display: flex;
