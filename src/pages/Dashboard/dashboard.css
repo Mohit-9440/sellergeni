@@ -6,11 +6,13 @@ body {
   padding: 40px;
   background: #ececec;
 }
+
 .dashboard-main {
   display: flex;
   flex-direction: column;
   font-family: Inter;
   gap: 20px;
+  scroll-behavior: smooth;
 }
 .dashboard-head,
 .dashboard-middle,
