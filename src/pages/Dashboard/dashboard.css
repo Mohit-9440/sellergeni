@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.dashboard{
+    padding: 40px;
+    background: #EEEEEE;
+}
+.dashboard-main{
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+}
+.dashboard-head{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dashboard-head-top-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+.dashboard-head-bottom-wrapper{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 10px;
+    background: #fff;
+    gap: 30px;
+}
