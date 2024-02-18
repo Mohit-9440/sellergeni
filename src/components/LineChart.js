@@ -1,43 +1,61 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
+import {
+    Chart as ChartJS,
+    LineElement,
+    CategoryScale,
+    LinearScale,
+    PointElement
+} from 'chart.js';
 
+ChartJS.register(
+    LineElement,
+    CategoryScale,
+    LinearScale,
+    PointElement
+)
 export default function LineChart() {
-  const yAxisValues = Array.from({ length: 7 }, (_, i) => 4000 + i * 1000);
   const xAxisDates = ["10 Feb", "11 Feb", "12 Feb", "13 Feb", "14 Feb", "15 Feb", "16 Feb"];
 
   const data = {
     labels: xAxisDates,
     datasets: [
       {
-        label: "Sales",
-        data: [8000, 8500, 9200, 9400, 9000, 9600, 9800], // Replace with your actual data
-        fill: false,
-        borderColor: "rgba(75,192,192,1)",
-      },
+        data: [5200, 6000, 4200, 9100, 6000, 8200, 4200],
+        backgroundColor: 'transparent',
+        borderColor: "#199418",
+        pointBorderColor: 'transparent',
+        pointBorderWidth: 2,
+        tension: 0.5
+      }
     ],
   };
 
   const options = {
+    plugins: {
+        legend: false
+    },
     scales: {
       x: {
-        type: "category", // Use "category" for non-numeric data on X-axis
-        position: "bottom",
+        grid: {
+            display: false
+        },
       },
       y: {
-        position: "left",
-        beginAtZero: false,
+        min: 4000,
+        max: 10000,
         ticks: {
           stepSize: 1000,
-          suggestedMin: 4000,
-          suggestedMax: 10000,
+        },
+        grid: {
+            borderDash: [10]
         },
       },
     },
   };
 
   return (
-    <div>
-      <h2>Line Chart</h2>
+    <div style={{marginTop: '10px', height: '300px', width: '700px'}}>
       <Line data={data} options={options} />
     </div>
   );
