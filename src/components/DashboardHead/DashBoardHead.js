@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import { ReactComponent as DeclineCircle } from "../../assets/declineCircle.svg";
 import jsonData1 from "../../data/performance.json";
 import jsonData2 from "../../data/efficiency.json";

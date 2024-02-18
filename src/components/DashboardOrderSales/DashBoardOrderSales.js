@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Tabs, Tab } from "@material-ui/core";
+import { Typography, Tabs, Tab } from "@mui/material";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 
 import "./dashboardordersales.css";
