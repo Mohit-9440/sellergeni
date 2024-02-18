@@ -1,92 +1,92 @@
-.budget-report{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.budget-report {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.budget-report-heading, .growth-report-heading {
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.budget-report-heading,
+.growth-report-heading {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-.budget-report-box{
-    border: 1px solid #c7c7c7;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 6px;
-    height: 210px;
+.budget-report-box {
+  border: 1px solid #c7c7c7;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  height: 210px;
 }
-.budget-report-box-head{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px solid #c7c7c7;
-    padding-bottom: 10px;
+.budget-report-box-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #c7c7c7;
+  padding-bottom: 10px;
 }
-.budget-report-box-body{
-    padding: 10px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border-bottom: 1px solid #c7c7c7;
-
+.budget-report-box-body {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #c7c7c7;
 }
-.budget-report-box-body-left, .growth-report-box-body-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
+.budget-report-box-body-left,
+.growth-report-box-body-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
 }
-.budget-report-box-head-left, .budget-report-box-head-right{
-    font-weight: 600;
+.budget-report-box-head-left,
+.budget-report-box-head-right {
+  font-weight: 600;
 }
-.budget-report-box-body-data{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+.budget-report-box-body-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.budget-report-box-bottom{
-    padding-top: 20px;
-    text-align: right;
-    color: #9A3DE4;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    flex-direction: row-reverse;
-    font-weight: 600;
+.budget-report-box-bottom {
+  padding-top: 20px;
+  text-align: right;
+  color: #9a3de4;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-direction: row-reverse;
+  font-weight: 600;
 }
-.growth-report{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.growth-report {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.growth-report-box{
-    border: 1px solid #c7c7c7;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 6px;
-    height: 210px;
-
+.growth-report-box {
+  border: 1px solid #c7c7c7;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  height: 210px;
 }
-.growth-report-box-head-con{
-    font-size: 20px;
-    font-weight: 700;
+.growth-report-box-head-con {
+  font-size: 20px;
+  font-weight: 700;
 }
-.growth-report-box-progress{
-    padding-top: 10px;
+.growth-report-box-progress {
+  padding-top: 10px;
 }
-.growth-report-box-body{
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.growth-report-box-body {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.growth-report-box-body-data{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.growth-report-box-body-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

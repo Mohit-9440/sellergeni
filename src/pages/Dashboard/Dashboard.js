@@ -30,7 +30,7 @@ export default function Dashboard() {
           </div>
         </section>
         <section className="dashboard-bottom">
-            <Support/>
+          <Support />
         </section>
       </div>
     </div>

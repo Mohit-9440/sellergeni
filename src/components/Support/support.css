@@ -1,63 +1,63 @@
-.support{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.support {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.support-heading{
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.support-heading {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-.support-body-wrapper{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+.support-body-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
-.support-body{
-    padding: 20px;
-    border-radius: 10px;
-    width: 32%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 120px;
+.support-body {
+  padding: 20px;
+  border-radius: 10px;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
 }
-.support-body-1{
-    background-color: #9A3DE4;
-    color: #fff;
+.support-body-1 {
+  background-color: #9a3de4;
+  color: #fff;
 }
-.support-body-2{
- background-color: #FF7715;
- color: #fff;
+.support-body-2 {
+  background-color: #ff7715;
+  color: #fff;
 }
-.support-body-3{
-    border: 1px solid #c7c7c7;
-    color: #000;
-    background-color: #fff;
+.support-body-3 {
+  border: 1px solid #c7c7c7;
+  color: #000;
+  background-color: #fff;
 }
-.support-box-body{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.support-box-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.support-box-body-data{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.support-box-body-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.support-button{
-    display: flex;
-    background: none;
-    border: 1px solid #fff;
-    border-radius: 6px;
-    padding: 10px;
-    cursor: pointer;
-    color: #fff;
-    gap: 10px;
-    align-items: center;
+.support-button {
+  display: flex;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  gap: 10px;
+  align-items: center;
 }
-.forum{
-    background-color: blue;
+.forum {
+  background-color: blue;
 }

@@ -1,58 +1,56 @@
-.order-summary{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
 }
-.order-summary-heading{
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.order-summary-heading {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-.order-summary-table{
-    border: 1px solid #c7c7c7;
-    /* padding: 10px; */
-    background-color: #fff;
-    border-radius: 6px;
+.order-summary-table {
+  border: 1px solid #c7c7c7;
+  background-color: #fff;
+  border-radius: 6px;
 }
-.order-summary-table-body{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.order-summary-table-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.order-summary-table-body-data{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.order-summary-table-body-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.summary-table-feature{
-    border: 1px solid #c7c7c7;
-    border-radius: 6px;
-    padding: 8px;
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    gap: 10px;
-
+.summary-table-feature {
+  border: 1px solid #c7c7c7;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
 }
-.order-summary-table-top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
+.order-summary-table-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
 }
-.order-summary-table-top-left{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+.order-summary-table-top-left {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
-.order-summary-table-top-right{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+.order-summary-table-top-right {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
-.order-table-text{
-    display: flex;
-    flex-direction: column;
+.order-table-text {
+  display: flex;
+  flex-direction: column;
 }

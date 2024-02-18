@@ -1,11 +1,8 @@
 import React from "react";
 import "./ordersummary.css";
-import { CiSearch,CiCalendar ,CiCircleQuestion  } from "react-icons/ci";
+import { CiSearch, CiCalendar, CiCircleQuestion } from "react-icons/ci";
 import { IoFilter } from "react-icons/io5";
 import { GoColumns } from "react-icons/go";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight,MdOutlineArrowDropDown  } from "react-icons/md";
-import { FaCircle,FaSquare,FaRegSquareCheck   } from "react-icons/fa6";
-import { GoArrowDown,GoArrowRight, GoArrowUp,GoArrowUpRight } from "react-icons/go";
 
 import {
   Table,
@@ -15,7 +12,7 @@ import {
   TableCell,
   TablePagination,
 } from "@mui/material";
-import Kettle from "../../assets/kettle.jpg"
+import Kettle from "../../assets/kettle.jpg";
 export default function OrderSummary() {
   const columns = [
     { id: "column1", label: "Product" },
@@ -65,45 +62,69 @@ export default function OrderSummary() {
   return (
     <>
       <div className="order-summary">
-        <div className="order-summary-heading">Order Summary<CiCircleQuestion color="#a5a5a5"/></div>
-        <div className="order-summary-table">
-        <div className="order-summary-table-top">
-          <div className="order-summary-table-top-left">
-            <div className="order-summary-table-search summary-table-feature"><CiSearch/>{" "}Search Products</div>
-            <div className="order-summary-table-filter summary-table-feature"><IoFilter/>{" "}Filter</div>
-          </div>
-          <div className="order-summary-table-top-right">
-          <div className="order-summary-table-columns summary-table-feature"><GoColumns/>{" "}Columns</div>
-            <div className="order-summary-table-date summary-table-feature"><CiCalendar/>{" "}10 Feb 24 to 16 Feb 24</div>
-          </div>
+        <div className="order-summary-heading">
+          Order Summary
+          <CiCircleQuestion color="#a5a5a5" />
         </div>
-          <Table style={{borderTop: "1px solid rgba(224, 224, 224, 1)"}}>
+        <div className="order-summary-table">
+          <div className="order-summary-table-top">
+            <div className="order-summary-table-top-left">
+              <div className="order-summary-table-search summary-table-feature">
+                <CiSearch /> Search Products
+              </div>
+              <div className="order-summary-table-filter summary-table-feature">
+                <IoFilter /> Filter
+              </div>
+            </div>
+            <div className="order-summary-table-top-right">
+              <div className="order-summary-table-columns summary-table-feature">
+                <GoColumns /> Columns
+              </div>
+              <div className="order-summary-table-date summary-table-feature">
+                <CiCalendar /> 10 Feb 24 to 16 Feb 24
+              </div>
+            </div>
+          </div>
+          <Table style={{ borderTop: "1px solid rgba(224, 224, 224, 1)" }}>
             <TableHead>
               <TableRow>
                 {columns.map((column) => (
-                  <TableCell style={{padding: "10px", color: "#a5a5a5"}} key={column.id}>{column.label}</TableCell>
+                  <TableCell
+                    style={{ padding: "10px", color: "#a5a5a5" }}
+                    key={column.id}
+                  >
+                    {column.label}
+                  </TableCell>
                 ))}
               </TableRow>
             </TableHead>
             <TableBody>
-            {data
+              {data
                 .slice(page * rowsPerPage, (page + 1) * rowsPerPage)
                 .map((row, index) => (
                   <TableRow key={index}>
                     {columns.map((column) => (
-                      <TableCell style={{ padding: "10px", fontWeight: "600"}} key={column.id}>
+                      <TableCell
+                        style={{ padding: "10px", fontWeight: "600" }}
+                        key={column.id}
+                      >
                         {column.id === "column1" ? (
-                          <div style={{display: "flex", flexDirection: "row"}}>
+                          <div
+                            style={{ display: "flex", flexDirection: "row" }}
+                          >
                             <img
                               src={Kettle}
                               alt="Product"
-                              style={{ width: "50px", height: "50px", marginRight: "10px" }}
+                              style={{
+                                width: "50px",
+                                height: "50px",
+                                marginRight: "10px",
+                              }}
                             />
                             <div className="order-table-text">
                               <span>{row[column.id].text1}</span>
-                            <span>{row[column.id].text2}</span>
+                              <span>{row[column.id].text2}</span>
                             </div>
-                            
                           </div>
                         ) : (
                           row[column.id]

@@ -1,61 +1,60 @@
-.dashboard-head-top{
-    width: 32%;
-    border: 1px solid #c7c7c7;
-    border-radius: 6px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #fff;
+.dashboard-head-top {
+  width: 32%;
+  border: 1px solid #c7c7c7;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
 }
-.dashboard-head-top-head{
-    border-bottom: 1px solid #c7c7c7;
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
-    justify-content: space-between;
+.dashboard-head-top-head {
+  border-bottom: 1px solid #c7c7c7;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  justify-content: space-between;
 }
-.dashboard-head-top-head-left{
-    font-weight: 700;
+.dashboard-head-top-head-left {
+  font-weight: 700;
 }
-.dashboard-head-top-body{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.dashboard-head-top-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.dashboard-head-top-body-data{
-    display: flex;
-    flex-direction: row;
+.dashboard-head-top-body-data {
+  display: flex;
+  flex-direction: row;
 }
-.dashboard-head-top-body-left{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+.dashboard-head-top-body-left {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
-.dashboard-head-top-body-right{
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.dashboard-head-top-body-right {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
-.dashboard-head-top-body-right svg{
-    width: 25px;
-    height: 25px;
+.dashboard-head-top-body-right svg {
+  width: 25px;
+  height: 25px;
 }
-.dashboard-head-top-head-left-1{
-    color: #A5A5A5;
-    font-family: Inter !important;
-    font-weight: 500 !important;
-    font-size: 12px !important;
+.dashboard-head-top-head-left-1 {
+  color: #a5a5a5;
+  font-family: Inter !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
 }
-.dashboard-head-top-head-left-2{
-    font-weight: 600 !important;
-    font-size: 22px !important;
-
+.dashboard-head-top-head-left-2 {
+  font-weight: 600 !important;
+  font-size: 22px !important;
 }
-.dashboard-head-top-head-left-3{
-    color: #A5A5A5;
-    font-size: 12px !important;
-    display: flex !important;
-    gap: 5px !important; 
+.dashboard-head-top-head-left-3 {
+  color: #a5a5a5;
+  font-size: 12px !important;
+  display: flex !important;
+  gap: 5px !important;
 }
