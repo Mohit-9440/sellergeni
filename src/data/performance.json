@@ -1,0 +1,31 @@
+[
+    {
+      "id" : 1,
+      "name": "AdSales",
+      "value": "₹19,450",
+      "content1": "-74.26%",
+      "content2": "₹75,560"
+    },
+    {
+      "id" : 2,
+      "name": "AdSpend",
+      "value": "8,006",
+      "content1": "-46.93%",
+      "content2": "₹15,080"
+    },
+    {
+      "id" : 3,
+      "name": "ROAS",
+      "value": "2.43",
+      "content1": "-51.51%",
+      "content2": "5.01"
+    },
+    {
+      "id" : 4,
+      "name": "Total Sales",
+      "value": "₹42,450",
+      "content1": "-62.77%",
+      "content2": "₹1,14,000"
+    }
+  ]
+  

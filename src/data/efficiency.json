@@ -1,0 +1,31 @@
+[
+    {
+      "id" : 1,
+      "name": "ACOS",
+      "value": "41.17%",
+      "content1": "106.22%",
+      "content2": "19.96%"
+    },
+    {
+      "id" : 2,
+      "name": "CPC",
+      "value": "₹8.837",
+      "content1": "21.26%",
+      "content2": "₹7.287"
+    },
+    {
+      "id" : 3,
+      "name": "CVR",
+      "value": "3.53%",
+      "content1": "-43.76%",
+      "content2": "6.28%"
+    },
+    {
+      "id" : 4,
+      "name": "TACOS",
+      "value": "18.86%",
+      "content1": "42.55%",
+      "content2": "13.23%"
+    }
+  ]
+  

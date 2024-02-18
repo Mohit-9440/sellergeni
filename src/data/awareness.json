@@ -1,0 +1,31 @@
+[
+    {
+      "id" : 1,
+      "name": "Impressions",
+      "value": "5,59,676",
+      "content1": "-45.96%",
+      "content2": "10,35,733"
+    },
+    {
+      "id" : 2,
+      "name": "Clicks",
+      "value": "906",
+      "content1": "-56.23%",
+      "content2": "2,070"
+    },
+    {
+      "id" : 3,
+      "name": "CTR",
+      "value": "0.16%",
+      "content1": "-19%",
+      "content2": "0.2%"
+    },
+    {
+      "id" : 4,
+      "name": "Total Orders",
+      "value": "75",
+      "content1": "-62.12%",
+      "content2": "198"
+    }
+  ]
+  
