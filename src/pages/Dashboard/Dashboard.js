@@ -6,6 +6,7 @@ import BudgetGrowth from "../../components/BudgetGrowth/BudgetGrowth";
 import BrandStore from "../../components/BrandStore/BrandStore";
 import OrderSummary from "../../components/OrderSummary/OrderSummary";
 import Support from "../../components/Support/Support";
+import AccordionT from "../../components/NestedAccordion/AccordionT";
 export default function Dashboard() {
   return (
     <div className="dashboard">
@@ -31,6 +32,8 @@ export default function Dashboard() {
         </section>
         <section className="dashboard-bottom">
           <Support />
+
+          <AccordionT/>
         </section>
       </div>
     </div>
