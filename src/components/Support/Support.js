@@ -6,7 +6,7 @@ export default function Support() {
     <>
       <div className="support">
         <div className="support-heading">
-          Get started with support <CiCircleQuestion color="#a5a5a5" />
+          Get started with support <CiCircleQuestion color="#fff" />
         </div>
         <div className="support-body-wrapper">
           <div className="support-body support-body-1">

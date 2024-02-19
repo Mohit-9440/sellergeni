@@ -55,7 +55,7 @@ export default function LineChart() {
   };
 
   return (
-    <div style={{marginTop: '10px', height: '600px', width: '700px'}}>
+    <div style={{marginTop: '10px'}}>
       <Line data={data} options={options} />
     </div>
   );

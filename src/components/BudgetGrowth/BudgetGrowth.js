@@ -26,7 +26,7 @@ export default function BudgetGrowth() {
       <div className="budget-report">
         <div className="budget-report-heading">
           Budget Report
-          <CiCircleQuestion color="#a5a5a5" />
+          <CiCircleQuestion color="#fff" />
         </div>
         <div className="budget-report-box">
           <div className="budget-report-box-head">
@@ -62,7 +62,7 @@ export default function BudgetGrowth() {
       <div className="growth-report">
         <div className="growth-report-heading">
           Growth Readiness Report
-          <CiCircleQuestion color="#a5a5a5" />
+          <CiCircleQuestion color="#fff" />
         </div>
         <div className="growth-report-box">
           <div className="growth-report-box-head">

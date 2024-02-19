@@ -8,12 +8,13 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  color: #fff;
 }
 .brand-store-box {
   border: 1px solid #c7c7c7;
-  padding: 10px;
+  padding: 20px;
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 .brand-store-box-body {
   display: flex;

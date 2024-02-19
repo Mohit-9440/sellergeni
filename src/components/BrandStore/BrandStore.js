@@ -8,7 +8,7 @@ export default function BrandStore() {
       <div className="brand-store">
         <div className="brand-store-heading">
           Are you making best use of Brand Store?
-          <CiCircleQuestion color="#a5a5a5" />
+          <CiCircleQuestion color="#fff" />
         </div>
         <div className="brand-store-box">
           <div className="brand-store-box-body">

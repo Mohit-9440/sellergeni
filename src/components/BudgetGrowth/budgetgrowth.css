@@ -10,13 +10,14 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  color: #fff;
 }
 .budget-report-box {
   border: 1px solid #c7c7c7;
-  padding: 10px;
+  padding: 20px;
   background-color: #fff;
-  border-radius: 6px;
-  height: 210px;
+  border-radius: 10px;
+  height: 200px;
 }
 .budget-report-box-head {
   display: flex;
@@ -67,10 +68,10 @@
 }
 .growth-report-box {
   border: 1px solid #c7c7c7;
-  padding: 10px;
+  padding: 20px;
   background-color: #fff;
-  border-radius: 6px;
-  height: 210px;
+  border-radius: 10px;
+  height: 200px;
 }
 .growth-report-box-head-con {
   font-size: 20px;

@@ -46,6 +46,7 @@ export default function DashBoardOrderSales() {
                     textTransform: "capitalize",
                     fontSize: "14px",
                     color: value === 0 ? "primary" : "inherit",
+                    borderBottom: value === 0 ? "1px solid #414d5c !important" : "none",
                   }}
                 >
                   Orders
@@ -57,7 +58,9 @@ export default function DashBoardOrderSales() {
                 <Typography
                   style={{
                     textTransform: "capitalize",
+                    fontSize: "14px",
                     color: value === 1 ? "primary" : "inherit",
+                    borderBottom: value === 0 ? "1px solid #414d5c !important" : "none",
                   }}
                 >
                   Sales
@@ -83,7 +86,7 @@ export default function DashBoardOrderSales() {
             </div>
           </div>
           <div className="dashboard-head-graph">
-            <LineChart />
+            <LineChart/>
           </div>
         </div>
       </div>

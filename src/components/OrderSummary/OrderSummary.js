@@ -64,7 +64,7 @@ export default function OrderSummary() {
       <div className="order-summary">
         <div className="order-summary-heading">
           Order Summary
-          <CiCircleQuestion color="#a5a5a5" />
+          <CiCircleQuestion color="#fff" />
         </div>
         <div className="order-summary-table">
           <div className="order-summary-table-top">
@@ -105,7 +105,7 @@ export default function OrderSummary() {
                   <TableRow key={index}>
                     {columns.map((column) => (
                       <TableCell
-                        style={{ padding: "10px", fontWeight: "600" }}
+                        style={{ padding: "10px", fontWeight: "500"}}
                         key={column.id}
                       >
                         {column.id === "column1" ? (

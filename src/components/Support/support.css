@@ -8,11 +8,12 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  color: #fff;
 }
 .support-body-wrapper {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
 }
 .support-body {
   padding: 20px;

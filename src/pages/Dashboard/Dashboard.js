@@ -7,6 +7,7 @@ import BrandStore from "../../components/BrandStore/BrandStore";
 import OrderSummary from "../../components/OrderSummary/OrderSummary";
 import Support from "../../components/Support/Support";
 import AccordionT from "../../components/NestedAccordion/AccordionT";
+import Footer from "../../components/footer/Footer";
 export default function Dashboard() {
   return (
     <div className="dashboard">
@@ -33,7 +34,10 @@ export default function Dashboard() {
         <section className="dashboard-bottom">
           <Support />
 
-          <AccordionT/>
+          {/* <AccordionT/> */}
+        </section>
+        <section className="dashboard-last">
+          <Footer/>
         </section>
       </div>
     </div>
