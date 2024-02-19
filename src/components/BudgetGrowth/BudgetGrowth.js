@@ -6,21 +6,33 @@ import { styled } from "@mui/material/styles";
 
 import LinearProgress, {
   linearProgressClasses,
-} from "@mui/material/LinearProgress";
+} from '@mui/material/LinearProgress';
+import { useCountUp } from 'use-count-up';
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   height: 20,
   borderRadius: 2,
   [`&.${linearProgressClasses.colorPrimary}`]: {
     backgroundColor:
-      theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
+      theme.palette.grey[theme.palette.mode === 'light' ? 200 : 800],
   },
   [`& .${linearProgressClasses.bar}`]: {
     borderRadius: 5,
-    backgroundColor: theme.palette.mode === "light" ? "#1a90ff" : "#308fe8",
+    backgroundColor: theme.palette.mode === 'light' ? '#1a90ff' : '#308fe8',
   },
 }));
 export default function BudgetGrowth() {
+  const { value: progressValue } = useCountUp({
+    isCounting: true,
+    duration: 5,
+    easing: 'linear',
+    start: 0,
+    end: 20, // Set the desired end value for the growth readiness
+    onComplete: () => ({
+      shouldRepeat: true,
+      delay: 2,
+    }),
+  });
   return (
     <>
       <div className="budget-report">
@@ -75,7 +87,7 @@ export default function BudgetGrowth() {
           </div>
           <div className="growth-report-box-progress">
             {" "}
-            <BorderLinearProgress variant="determinate" value={20} />
+            <BorderLinearProgress variant="determinate" value={progressValue} />
           </div>
           <div className="growth-report-box-body">
             <div className="growth-report-box-body-data">

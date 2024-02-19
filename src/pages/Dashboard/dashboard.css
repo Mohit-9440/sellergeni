@@ -26,7 +26,10 @@ body {
   /* background: #0f1f3d; */
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
-
+.CircleFollowMouse {
+  position: fixed;
+  z-index: 9999; /* Ensure it's above other elements */
+}
 .dashboard-main {
   display: flex;
   flex-direction: column;
@@ -75,4 +78,17 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+.scroll-button{
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  z-index: 100;
+  transform: translateY(20px);
+  transition: all .5s ease;
+  background: #536dff;
+  border: none;
+  border-radius: 20px;
+  padding: 16px 8px;
+  color: #fff;
 }

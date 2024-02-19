@@ -8,9 +8,12 @@ import OrderSummary from "../../components/OrderSummary/OrderSummary";
 import Support from "../../components/Support/Support";
 import AccordionT from "../../components/NestedAccordion/AccordionT";
 import Footer from "../../components/footer/Footer";
+import CircleFollowMouse from "../../components/CircleFollowMouse";
+import ScrollButton from "../../components/ScrollButton";
 export default function Dashboard() {
   return (
     <div className="dashboard">
+      <CircleFollowMouse className="CircleFollowMouse"/>
       <div className="dashboard-main">
         <section className="dashboard-head">
           <div className="dashboard-head-top-wrapper">
@@ -39,6 +42,7 @@ export default function Dashboard() {
         <section className="dashboard-last">
           <Footer/>
         </section>
+        <ScrollButton className="scroll--button"/>
       </div>
     </div>
   );
