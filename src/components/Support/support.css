@@ -23,6 +23,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 120px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .support-body-1 {
   /* background-color: #9a3de4; */

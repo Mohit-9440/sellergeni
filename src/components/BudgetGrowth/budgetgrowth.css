@@ -13,9 +13,10 @@
   color: #fff;
 }
 .budget-report-box {
-  border: 1px solid #c7c7c7;
+  /* border: 1px solid #c7c7c7; */
   padding: 20px;
   background-color: #fff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   border-radius: 10px;
   height: 200px;
 }
@@ -70,11 +71,13 @@
   gap: 10px;
 }
 .growth-report-box {
-  border: 1px solid #c7c7c7;
+  /* border: 1px solid #c7c7c7; */
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   height: 200px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
 }
 .growth-report-box-head-con {
   font-size: 20px;
