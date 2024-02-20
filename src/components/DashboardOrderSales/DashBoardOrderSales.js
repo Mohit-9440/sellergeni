@@ -86,7 +86,8 @@ export default function DashBoardOrderSales() {
             </div>
           </div>
           <div className="dashboard-head-graph">
-            <LineChart/>
+            <LineChart 
+  options={{ maintainAspectRatio: false }}/>
           </div>
         </div>
       </div>

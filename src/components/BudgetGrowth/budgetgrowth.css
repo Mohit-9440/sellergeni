@@ -60,6 +60,9 @@
   flex-direction: row-reverse;
   font-weight: 600;
 }
+.budget-report-box-bottom:hover{
+  color: #1a90ff;
+}
 .growth-report {
   width: 60%;
   display: flex;
